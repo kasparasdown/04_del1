@@ -8,7 +8,7 @@ public static void main(String[] args) {
     int max = 6;
     int player_1 = 0;
     int player_2 = 0;
-    while (1>0){
+    while (1>0) {
         System.out.println("It's Player 1's turn, press r to roll: ");
         var n = scanner.nextLine();
         if (n.equals("r")) {
