@@ -35,7 +35,7 @@ public class PlayerPoints {
                         break;
                     }
                     if (Die1 == Die2) {
-                        System.out.println("Hooray! You just got both dice of the same value. You get an extra turn:)");
+                        System.out.println("You just got both dice of the same value. You get an extra turn:)");
                     continue;
                     }
                     System.out.println("\nNow its Player 2's turn");
