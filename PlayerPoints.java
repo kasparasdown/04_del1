@@ -9,6 +9,7 @@ public class PlayerPoints {
         int player_2 = 0;
         Random rand = new Random();
         int t = 1; 
+        int win = 0; //6'er wincon
 
         //Let's the game go on until game is over, having a starting line saying who goes first.
         System.out.println("Player 1 starts");       
@@ -29,12 +30,26 @@ public class PlayerPoints {
                         System.out.println("Oh no! You rolled two 1's, you start over.");
 
                     }
-                    System.out.println("Player 1 has Rolled " + Dice1 + " and " + Dice2 + "\nPlayer 1 has " + player_1 + " points");
-                    if (player_1 >= 40) {
+                    System.out.println("Player 1 has Rolled " + Die1 + " and " + Die2 + "\nPlayer 1 has " + player_1 + " points");
+                    
+                    if (player_1 >= 40){
+                        System.out.println("You have reached 40 now roll the same value on both dice to win the game.");
+                    }
+                    if ((player_1 >= 40) && (Die1 == Die2)) {
                         System.out.println("\nPlayer 1 has won the game");
                         break;
                     }
                     if (Die1 == Die2) {
+                        if ((Die1 + Die2 == 12) && (win == 1)) {
+                            System.out.println("\nPlayer 2 has won the game");
+                            break;                                                        
+                        }
+                        else if ((Die1 + Die2 == 12)) {
+                            win++;
+                        }
+                        else {
+                            win = 0;
+                        }
                         System.out.println("You just got both dice of the same value. You get an extra turn:)");
                     continue;
                     }
@@ -53,11 +68,21 @@ public class PlayerPoints {
                     if (player_2 >= 40){
                         System.out.println("You have reached 40 now roll the same value on both dice to win the game.");
                     }
-                    if ((player_2 >= 40) && (Dice1 == Dice2)){
+                    if ((player_2 >= 40) && (Die1 == Die2)){
                         System.out.println("\nPlayer 2 has won the game");
                         break;
                     }
                     if (Die1 == Die2) {
+                        if ((Die1 + Die2 == 12) && (win == 1)) {
+                            System.out.println("\nPlayer 2 has won the game");
+                            break;                                                        
+                        }
+                        else if ((Die1 + Die2 == 12)) {
+                            win++;
+                        }
+                        else {
+                            win = 0;
+                        }
                         System.out.println("You just got both dice of the same value. You get an extra turn:)");
                     continue;
                     }
