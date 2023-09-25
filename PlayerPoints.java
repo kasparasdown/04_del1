@@ -27,8 +27,8 @@ public class PlayerPoints {
 
                     }
                     System.out.println("Player 1 has Rolled " + Dice1 + " and " + Dice2 + "\nPlayer 1 has " + player_1 + " points");
-                    if (player_1 >= 40) {
-                        System.out.println("\nPlayer 1 has won the game");
+                    if ((player_1 >= 40) && (Dice1 == Dice2)) {
+                        System.out.println("\nPlayer 2 has won the game");
                         break;
                     }
                     if (Dice1 == Dice2) {
@@ -47,10 +47,10 @@ public class PlayerPoints {
                      }
 
                     System.out.println("Player 2 has Rolled " + Dice1 + " and " + Dice2 + "\nPlayer 2 has " + player_2 + " points"+System.lineSeparator());
-                    if (player_2 >= 40){
+                    if ((player_2 >= 40) && (Dice1 == Dice2)) {
                         System.out.println("\nPlayer 2 has won the game");
                         break;
-                    }
+                        }
                     if (Dice1 == Dice2) {
                         System.out.println("You just got both dice of the same value. You get an extra turn:)");
                     continue;
