@@ -30,7 +30,11 @@ public class PlayerPoints {
 
                     }
                     System.out.println("Player 1 has Rolled " + Die1 + " and " + Die2 + "\nPlayer 1 has " + player_1 + " points");
-                    if (player_1 >= 40) {
+                    
+                    if (player_1 >= 40){
+                        System.out.println("You have reached 40 now roll the same value on both dice to win the game.");
+                    }
+                    if ((player_1 >= 40) && (Die1 == Die2)) {
                         System.out.println("\nPlayer 1 has won the game");
                         break;
                     }
@@ -51,6 +55,9 @@ public class PlayerPoints {
 
                     System.out.println("Player 2 has Rolled " + Die1 + " and " + Die2 + "\nPlayer 2 has " + player_2 + " points"+System.lineSeparator());
                     if (player_2 >= 40){
+                        System.out.println("You have reached 40 now roll the same value on both dice to win the game.");
+                    }
+                    if ((player_2 >= 40) && (Die1 == Die2)){
                         System.out.println("\nPlayer 2 has won the game");
                         break;
                     }
