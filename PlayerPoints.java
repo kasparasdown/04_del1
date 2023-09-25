@@ -23,7 +23,7 @@ public class PlayerPoints {
                     player_1 = player_1 + Dice1 + Dice2;
                     t++;
                     System.out.println("Player 1 has Rolled " + Dice1 + " and " + Dice2 + "\nPlayer 1 has " + player_1 + " points");
-                    if (player_1 >= 40){
+                    if (player_1 >= 40) {
                         System.out.println("\nPlayer 1 has won the game");
                         break;
                     }
