@@ -19,7 +19,7 @@ public static void main(String[] args) {
             System.out.println("Player 1 has Rolled "+ Dice1+" and "+Dice2);
             System.out.println("Player 1 has "+ player_1+" points");
 
-        }
-    }        
-}
+            }
+        }       
+    }
 }
