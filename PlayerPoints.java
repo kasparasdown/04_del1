@@ -9,7 +9,7 @@ public class PlayerPoints {
         Random rand = new Random();
         int t = 1; 
         System.out.println("Player 1 starts");       
-        while ((player_1 <= 40) && (player_2 <= 40)) {
+        while (true) {
             System.out.println("Press r to roll: "); 
             var n = scanner.nextLine();
 
