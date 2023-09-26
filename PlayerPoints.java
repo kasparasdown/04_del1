@@ -47,14 +47,13 @@ public class PlayerPoints {
                         else if ((Die1 + Die2 == 12)) {
                             win++;
                         }
-                        else {
-                            win = 0;
-                        }
+                        win=0;
                         System.out.println("You just got both dice of the same value. You get an extra turn:)");
                     continue;
                     }
                     System.out.println("\nNow its Player 2's turn");
                     t++;
+                    win=0;
                 }
                 //Player2 result
                 else if(t==2) {
@@ -80,14 +79,13 @@ public class PlayerPoints {
                         else if ((Die1 + Die2 == 12)) {
                             win++;
                         }
-                        else {
-                            win = 0;
-                        }
+                        win=0;
                         System.out.println("You just got both dice of the same value. You get an extra turn:)");
                     continue;
                     }
                     System.out.println("Now its Player 1's turn");
                     t--;
+                    win=0;
                 }
                 else{
                     System.out.println("ERROR CODE");
